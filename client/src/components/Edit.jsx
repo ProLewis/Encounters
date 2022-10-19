@@ -43,19 +43,25 @@ const Edit = () => {
             .catch(err => console.error(err));
     }, [id]);
 
+    const ancientGoldDragon = new Monster("Ancient Gold Dragon", "Gargantuan", "Dragon", 24, 62000);
     const adultBlackDragon = new Monster("Adult Black Dragon", "Huge", "Dragon", 14, 11500);
-    const goblin = new Monster("Goblin", "Small", "Humanoid", 0.25, 50);
+    const hydra = new Monster("Hydra", "Huge", "Monstrosity", 8, 3900);
+    const stoneGiant = new Monster("Stone Giant", "Huge", "Giant", 7, 2900);
+    const youngBrassDragon = new Monster("Young Brass Dragon", "Large", "Dragon", 6, 2300);
+    const triceratops = new Monster("Triceratops", "Huge", "Beast", 5, 1800);
+    const ghost = new Monster("Ghost", "Medium", "Undead", 4, 1100);
+    const owlbear = new Monster("Owlbear", "Large", "Monstrosity", 3, 700);
+    const mimic = new Monster("Mimic", "Medium", "Monstrosity", 2, 450);
     const direWolf = new Monster("Dire Wolf", "Large", "Beast", 1, 200);
+    const gnoll = new Monster("Gnoll", "Medium", "Humanoid", 0.5, 100);
+    const goblin = new Monster("Goblin", "Small", "Humanoid", 0.25, 50);
 
-    const monsters = [adultBlackDragon, goblin, direWolf];
+    const monsters = [ancientGoldDragon, adultBlackDragon, hydra, stoneGiant, youngBrassDragon, triceratops, ghost, owlbear, mimic, direWolf, gnoll, goblin ];
 
     const addMonster = (monster) => {
-        //console.log(monster)
         let tempArr = encounterMonsters;
         tempArr.push(monster);
         setEncounterMonsters(tempArr);
-        // console.log("Monster here!");
-        // console.log(encounterMonsters);
         navigate(`/encounters/${id}/edit`);
     }
 
@@ -189,7 +195,7 @@ const Edit = () => {
                     </TabPane>
                 </TabContent>
             </Form>
-            <div>
+            {/*<div>
                 {encounterMonsters.map((mon, index) =>{
                     return (
                         <div key = {index}>
@@ -197,7 +203,7 @@ const Edit = () => {
                         </div>
                     )
                 })}
-            </div>
+            </div>*/}
         </div>
     )
 }

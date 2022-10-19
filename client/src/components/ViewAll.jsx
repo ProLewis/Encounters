@@ -61,7 +61,7 @@ const ViewAll = () => {
                                     <td>{encounter.campaign}</td>
                                     <td>{encounter.difficulty}</td>
                                     <td>{`${encounter.party.length} level ${encounter.avgLevel}s`}</td>
-                                    <td>{format(new Date(encounter.updatedAt), "MMMM dd yyyy HH:mm p")}</td>
+                                    <td>{format(new Date(encounter.updatedAt), "MMMM dd yyyy p")}</td>
                                     <td>
                                         <button onClick={() => deleteEncounter(encounter._id)}>Delete</button>
                                         <Link to={`/encounters/${encounter._id}/edit`}><button>Edit</button></Link>

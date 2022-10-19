@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Table, Form, FormGroup, Input, Label, Nav, NavItem, TabContent, TabPane, NavLink, Row, Col, Container, Card, CardTitle, Breadcrumb, BreadcrumbItem, Modal, ModalHeader, ModalBody, Button } from 'reactstrap'
 
@@ -10,7 +10,7 @@ const Builder = () => {
     const [summary, setSummary] = useState("");
     const [description, setDescription] = useState("");
     const [rewards, setRewards] = useState("");
-    const [campaign, setCampaign] = useState("");
+    {/*const [campaign, setCampaign] = useState("");*/}
     const [party, setParty] = useState([1, 1, 1, 1, 1]);
     const [avgLevel, setAvgLevel] = useState(0);
     const [difficulty, setDifficulty] = useState("Trivial");
@@ -59,9 +59,9 @@ const Builder = () => {
         navigate("/encounter-builder");
     }
     
-    const removeMonster = (monster) => {
+    {/*const removeMonster = (monster) => {
         //TODO
-    }
+    }*/}
     
     
     useEffect(() => {
@@ -387,7 +387,7 @@ const Builder = () => {
                                     <p>MEDIUM: {medExp}</p>
                                     <p>HARD: {hardExp}</p>
                                     <p>DEADLY: {deadlyExp}</p>
-                                    <p>DAILY BUDGET:</p>
+                                    {/*<p>DAILY BUDGET:</p>*/}
                                 </Col>
                             </Row>
                         </div>
