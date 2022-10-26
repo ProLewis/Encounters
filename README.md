@@ -38,8 +38,12 @@ From the server folder run:
 ```sh
 nodemon server.js
 ```
+This command will start up the server and get the database connected.
 
 From the client folder run:
 ```sh
+npm install
 npm start
 ```
+The first command will install the required Node_Modules.
+The second will start the client, opening up the application in your browser.
