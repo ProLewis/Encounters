@@ -9,3 +9,5 @@ This project was built in React, and utilizes Axios and Express.
 MongoDB provided a simple non-relational database management system.
 
 The frontend was styled using ReactStrap and some custom CSS.
+
+![](https://github.com/Encounters/EncounterModal.gif)
