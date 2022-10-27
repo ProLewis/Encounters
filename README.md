@@ -14,6 +14,8 @@ The frontend was styled using ReactStrap and some custom CSS.
 
 Encounters is a clone of DnDBeyond's Encounter Builder: https://www.dndbeyond.com/encounter-builder
 
+Video Demo: https://www.youtube.com/watch?v=KmzBjISVfEw
+
 It's purpose is to help create and balance encounters within Dungeons and Dragons 5th Edition. 
 It uses the experience and challenge ratings within the Monster Manual to calculate the difficulty and adjusted experience of a selection of monsters to face, and relates it to the chosen levels of a standard adventuring party.
 
