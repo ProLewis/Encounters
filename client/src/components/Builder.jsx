@@ -202,7 +202,7 @@ const Builder = () => {
     return (
         <div>
             {/* {JSON.stringify(encounterMonsters)} */}
-            <br />
+            {/*<br /> */}
             {/* {JSON.stringify(encounterName)} */}
             <Container>
                 <Row>
